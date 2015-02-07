@@ -1,4 +1,4 @@
-# Monetae
+# Monetæ
 An currency converter app
 
 Firefox Marketplace
