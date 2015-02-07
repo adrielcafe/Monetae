@@ -2,7 +2,7 @@
 <widget id="com.ionicframework.monetae774018" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Monetæ</name>
   <description>
-        An currency convert app
+        An currency converter app
     </description>
   <author email="ac@adrielcafe.com" href="http://adrielcafe.com/">
       Adriel Café

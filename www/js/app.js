@@ -20,15 +20,18 @@ angular.module('starter', ['ionic'])
 
 jQuery(function($){
     $("#value").maskMoney();
+    $("#result").maskMoney();
 
     $("#convert").on("click", function(e){
         e.preventDefault();
         var from = $("#from :selected").text();
         var to = $("#to :selected").text();
-        var value = $("#value").val();
-        var api = "http://rate-exchange.appspot.com/currency?from="+from+"&to="+to+"&q="+value;
-        $.getJSON(api, function(data){
-          $("#result").val(data.v);
+        var fromTo = from +"_"+ to;
+        var api = "http://www.freecurrencyconverterapi.com/api/v3/convert?q="+fromTo+"&compact=y&callback=?"
+        $.getJSON(api).done(function(data) {
+          var value = parseFloat($("#value").val().replace(",", ""));
+          var result = value * data[fromTo].val;
+          $("#result").maskMoney('mask', result)
         });
     });
 });

@@ -1,7 +1,7 @@
 {
   "name": "Monetæ",
   "version": "1.0.0",
-  "description": "Monetæ: Currency Converter",
+  "description": "An currency converter app",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^0.7.1",
